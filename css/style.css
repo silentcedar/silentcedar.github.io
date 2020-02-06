@@ -39,13 +39,13 @@ body {
 }
 
 .page {
-    font-size: 16px
+    font-size: 18px
 }
 
 .page,
 .post {
     line-height: 1.5em;
-    font-family: Fira code,SimHei,Monaco, Menlo, Consolas,DOS,  'Courier New', monospace
+    font-family: monospace, Menlo, Fira code, SimHei, Monaco, Consolas, dos, 'Courier New'
 }
 
 .page .more {
@@ -59,11 +59,11 @@ body {
 
 .mypage {
     padding-bottom: 30px;
-    border-bottom: 1px solid #fff
+    border-bottom: 1px solid #000
 }
 
 .navbar-brand {
-    text-shadow: 0 1px 0 rgba(255, 255, 255, .1), 0 0 30px rgba(255, 255, 255, .125);
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 0 30px rgba(255, 255, 255, .125);
     -webkit-transition: all .2s linear;
     -moz-transition: all .2s linear;
     transition: all .2s linear
@@ -119,11 +119,11 @@ li i {
 .tag_box a {
     padding: 2px 6px;
     margin: 2px;
-    background: #e5e5e5;
-    color: #555;
+    background: #9b5800;
+    color: rgb(255, 255, 255);
     border-radius: 3px;
     text-decoration: none;
-    border: 1px dashed #bbb
+    border: 1px dashed rgb(0, 0, 0)
 }
 
 .tag_box a span {
@@ -132,8 +132,8 @@ li i {
 }
 
 .tag_box a:hover {
-    background-color: #397bdd;
-    color: #FFF
+    background-color: #8eff9d;
+    color: rgb(65, 65, 65)
 }
 
 .tag_box a.active {
@@ -149,7 +149,7 @@ li i {
 }
 
 #local-search-input {
-    background-color: #000;
+    background-color: rgb(0, 44, 6);
     color: #fff;
     font-family: dos;
     -webkit-text-fill-color: #bbb
@@ -159,7 +159,7 @@ li i {
     scroll: auto;
     overflow: auto;
     max-height: 3in;
-    background-color: #000
+    background-color: rgb(54, 31, 0)
 }
 
 ul.search-result-list {
@@ -171,11 +171,11 @@ a.search-result-title {
 }
 
 p.search-result {
-    color: #555
+    color: rgb(201, 201, 201)
 }
 
 em.search-keyword {
-    border-bottom: 1px dashed #4088b8;
+    border-bottom: 1px dashed #40b840;
     font-weight: bold
 }
 
@@ -184,7 +184,7 @@ em.search-keyword {
 }
 
 a {
-    color: #2bbc8a
+    color: #1c8661
 }
 
 a:focus {
@@ -193,12 +193,12 @@ a:focus {
 }
 
 a:hover {
-    color: #000000;
-    background: rgb(153, 153, 153)
+    color: #3a3a3a;
+    background: rgb(41, 228, 103)
 }
 
 a:active {
-    color: #fefe54;
+    color: #baffa9;
     background: #a50
 }
 
@@ -276,7 +276,7 @@ video {
 
 .slogan {
     font-size: 1.2em;
-    color: #fff;
+    color: #000;
     display: block;
     margin-bottom: 1.2em
 }
@@ -360,11 +360,11 @@ h6 {
     text-rendering: optimizelegibility;
     font-weight: bold;
     font-family: DOS, SimHei, Monaco, Menlo, Consolas, 'Courier New', monospace;
-    color: #fff
+    color: #000
 }
 
 h2 {
-    color: #fff;
+    color: #000;
     padding-top: 40px;
     margin: -25px 0 .83em
 }
@@ -524,7 +524,7 @@ hr {
     box-shadow: #000 0 0 0 0;
     margin: 10px 0 0 10px;
     outline: #000 none;
-    background: #bbb !important
+    background: rgb(93, 255, 142) !important
 }
 
 .ds-thread {
@@ -542,8 +542,8 @@ hr {
     line-height: 2.0em
 }
 
-.fa-heart:before {
-    color: #f00
+.fa-leaf:before {
+    color: rgb(0, 65, 11)
 }
 
 pre code {
@@ -558,7 +558,7 @@ pre {
 pre,
 .highlight,
 .gist {
-    background: #252525 !important;
+    background: #023823 !important;
     -webkit-border-radius: 0 !important;
     -moz-border-radius: 0 !important;
     border-radius: 0 !important
@@ -577,7 +577,7 @@ figure {
 }
 
 .date {
-    color: #fff;
+    color: #000;
     line-height: 3em;
     text-align: right
 }
@@ -603,43 +603,42 @@ code {
     margin: 1.5em 0 0;
     padding: 0em 1em;
     border-left: 3px solid #ff1700;
-    background-color: #272727;
+    background-color: #f0f0f0;
     list-style: none;
     font-size: 14px;
 }
 
 
-/*valine 评论系统样式*/
-
-
+/*valine comment setup*/
   
-
 .v .vwrap{
-border: 2px solid rgb(255, 255, 255) !important;
+border: 2px solid rgb(0, 0, 0) !important;
 
 }
   
 .v * {
-    color: #e4e4e4!important;
+    color: #000000!important;
+    background: #ffffff !important;
 }
 
 
 .v .vlist .vcard .vhead .vsys {
-    background: #393939 !important;
-
+    color: #ffffff!important;
+    background: #005e05 !important;
 }
 
 .v .vbtn{
-    background: #000 !important;
-    
+    color: #ffffff!important;
+    background: rgb(0, 66, 0) !important;
 }
 
 .post-meta-item-text::before, em::after {
     content: '';
+    font-size: 16px;
 }
 .post-meta-item-text{
-    font-size: 12px;
+    font-size: 16px;
 }
 .leancloud-visitors-count{
-    font-size: 12px;
+    font-size: 16px;
 }

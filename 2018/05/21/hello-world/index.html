@@ -45,27 +45,7 @@ Generate static files1$ hexo generate">
 
   <!-- analytics -->
   
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-70812759-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-70812759-1');
-</script>
-
-
-
-
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "//hm.baidu.com/hm.js?cb5448498d7169c668b07c2b255d62c1";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
 
 
 
@@ -159,8 +139,7 @@ var _hmt = _hmt || [];
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 
 	  <div class="article-footer-copyright">
-
-    本博客采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议(CC BY-NC-SA 4.0) 发布.
+    All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">CC BY-NC-SA 4.0</a> unless stating additionally.
 </div>
 
 	</div>
@@ -192,6 +171,33 @@ var _hmt = _hmt || [];
 
 -->
 	
+		<section id="comments" class="comments">
+			<style>
+			.comments{margin:30px;padding:10px;background:rgb(0, 104, 5)}
+			@media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:rgb(0, 0, 0)}}
+			</style>
+			<div id="vcomment" class="comment"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<script src="https://cdnjs.loli.net/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+    var notify = 'false' == true ? true : false;
+    var verify = 'false' == true ? true : false;
+    new Valine({
+        av: AV,
+        el: '#vcomment',
+        notify: notify,
+        app_id: "CIBO7vsEezgtVzq8O8TDlcXJ-MdYXbMMI",
+        app_key: "YtxIKSA0Ewfg8bvOkr7VhfK1",
+        lang: "en",
+        placeholder: "Feel free to leave a message :)",
+        avatar:"",
+        visitor: "true",
+    });
+</script>
+
+		</section>
+	
 	</div> <!-- col-md-9/col-md-12 -->
 
 
@@ -203,14 +209,14 @@ var _hmt = _hmt || [];
 	
 	<div class="meta-widget">
 	<i class="fa fa-clock-o"></i>
-	05-21-2018 
+	May 21, 2018 
 	</div>
 	
 
 	<!-- categories -->
     
 	<div class="meta-widget">
-	<a data-toggle="collapse" data-target="#categorys"><i class="fa fa-folder"></i></a>	
+	<a data-toggle="collapse" data-target="#categorys"><i class="fa fa-book"></i></a>	
     <ul id="categorys" class="tag_box list-unstyled collapse in">
           
   <li>
